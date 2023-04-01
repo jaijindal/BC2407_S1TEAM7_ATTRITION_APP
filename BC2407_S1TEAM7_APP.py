@@ -257,7 +257,7 @@ def show_prediction():
     st.write(" ")
     st.write(" ")
     st.write("These are the variables which affect if " +selected_option+ " will stay at Coinbase or leave.")
-    st.write('''These variables have the default values set as the current data of the ''' +selected_option+ '''. Human Resources are
+    st.write('''These variables have the default values set as the current data of ''' +selected_option+ '''. Human Resources are
              encouraged to toggle these variables to try out different combinations that would best suit ''' +selected_option+ ''' 
              and enable retention if ''' +selected_option+ ''' is at risk of leaving. Human Resources are also encouraged to take 
              personalized recommendations for the employees (if they are at risk of leaving) printed at the bottom of the screen as a framework. ''')
