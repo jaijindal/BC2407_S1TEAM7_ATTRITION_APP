@@ -59,6 +59,7 @@ def show_home_page():
 
     with col2:
         st.image(image1)
+        st.write(" (Click on Navigation Sidebar to begin) ")
 
     with col3:
         st.write("")
