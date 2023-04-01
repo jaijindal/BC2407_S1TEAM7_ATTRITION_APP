@@ -10,7 +10,8 @@ import time as time
 random.seed(42)
 
 # Load dataset
-data = pd.read_csv("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/Final_Dataset.csv")
+data_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/Final_Dataset.csv"
+data = pd.read_csv(data_url)
 
 # Split dataset into features and target variable
 X = data.drop('Attrition', axis=1)
@@ -42,7 +43,8 @@ def show_home_page():
 
 
     st.write(f"<h1 style='text-align: center; font-size: 3em;'>Coinbase WebApp For Human Resources</h1>", unsafe_allow_html=True)
-    image1=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/coinbase_logo3.png")
+    image1_url="https://github.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/blob/43f0b6529ee1d07e9995cf072f66ce6c7ee08b21/coinbase_logo3.png"
+    image1=PIL.Image.open(image1_url)
     new_size = (1200, 700)
     image1 = image1.resize(new_size)
     col1, col2, col3 = st.columns([1,6,1])
