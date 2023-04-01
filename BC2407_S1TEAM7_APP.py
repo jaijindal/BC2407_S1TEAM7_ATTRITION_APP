@@ -44,7 +44,8 @@ def show_home_page():
 
     st.write(f"<h1 style='text-align: center; font-size: 3em;'>Coinbase WebApp For Human Resources</h1>", unsafe_allow_html=True)
     image1_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/coinbase_logo3.png"
-    image1=PIL.Image.open(image1_url)
+    image1 = Image.open(requests.get(image1_url, stream=True).raw)
+    #image1=PIL.Image.open(image1_url)
     new_size = (1200, 700)
     image1 = image1.resize(new_size)
     col1, col2, col3 = st.columns([1,6,1])
