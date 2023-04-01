@@ -92,7 +92,6 @@ def show_prediction():
         l=3
         m=11000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot2.jpg"
-        image5=PIL.Image.open(image5_url)
 
        
     if selected_option=="Benjamin":
@@ -110,7 +109,6 @@ def show_prediction():
         l=4
         m=2000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot1.jpg"
-        image5=PIL.Image.open(image5_url)
 
 
     if selected_option=="Charlotte":
@@ -128,7 +126,6 @@ def show_prediction():
         l=4
         m=10000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot3.jpg"
-        image5=PIL.Image.open(image5_url)
 
         
     if selected_option=="Dylan":
@@ -146,7 +143,6 @@ def show_prediction():
         l=3
         m=6000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot4.jpg"
-        image5=PIL.Image.open(image5_url)
 
     
    
@@ -165,7 +161,6 @@ def show_prediction():
         l=2
         m=6000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot5.jpg"
-        image5=PIL.Image.open(image5_url)
 
 
     if selected_option=="Fiona":
@@ -183,7 +178,6 @@ def show_prediction():
         l=4
         m=10000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot6.jpg"
-        image5=PIL.Image.open(image5_url)
 
 
 
@@ -202,7 +196,6 @@ def show_prediction():
         l=4
         m=5000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot7.jpg"
-        image5=PIL.Image.open(image5_url)
 
         
     if selected_option=="Henry":
@@ -220,7 +213,6 @@ def show_prediction():
         l=4
         m=2000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot8.jpg"
-        image5=PIL.Image.open(image5_url)
 
        
     if selected_option=="Isabella":
@@ -238,11 +230,12 @@ def show_prediction():
         l=4
         m=17000
         image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot9.jpg"
-        image5=PIL.Image.open(image5_url)
 
         
     col1, col2, col3 = st.columns([2,2,2])
     new_size = (300, 300)
+    image5 = Image.open(requests.get(image5_url, stream=True).raw)
+
     image5 = image5.resize(new_size)
 
 
@@ -349,18 +342,18 @@ def show_prediction():
     col1, col2, col3 = st.columns([2,2,2])
     
     image2_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/Index_1.png"
-    image2=PIL.Image.open(image2_url)
+    image2 = Image.open(requests.get(image2_url, stream=True).raw)
     new_size = (700, 700)
     image2 = image2.resize(new_size)
 
     image3_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/Index_2.png"
-    image3=PIL.Image.open(image3_url)
+    image3 = Image.open(requests.get(image3_url, stream=True).raw)
     new_size = (700, 700)
     image3 = image3.resize(new_size)
     
     
     image4_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/Index_3.png"
-    image4=PIL.Image.open(image4_url)
+    image4 = Image.open(requests.get(image4_url, stream=True).raw)
     new_size = (700, 700)
     image4 = image4.resize(new_size)
     
