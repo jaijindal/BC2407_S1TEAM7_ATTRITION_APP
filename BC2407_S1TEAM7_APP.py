@@ -6,6 +6,8 @@ import PIL
 import streamlit_ace as st_ace
 import time as time
 from PIL import Image
+import requests
+
 
 
 # Set random seed
