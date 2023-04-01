@@ -43,7 +43,7 @@ def show_home_page():
 
 
     st.write(f"<h1 style='text-align: center; font-size: 3em;'>Coinbase WebApp For Human Resources</h1>", unsafe_allow_html=True)
-    image1_url="https://github.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/blob/43f0b6529ee1d07e9995cf072f66ce6c7ee08b21/coinbase_logo3.png"
+    image1_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/coinbase_logo3.png"
     image1=PIL.Image.open(image1_url)
     new_size = (1200, 700)
     image1 = image1.resize(new_size)
@@ -86,7 +86,8 @@ def show_prediction():
         k=8
         l=3
         m=11000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot2.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot2.jpg"
+        image5=PIL.Image.open(image5_url)
 
        
     if selected_option=="Benjamin":
@@ -103,7 +104,8 @@ def show_prediction():
         k=0
         l=4
         m=2000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot1.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot1.jpg"
+        image5=PIL.Image.open(image5_url)
 
 
     if selected_option=="Charlotte":
@@ -120,7 +122,8 @@ def show_prediction():
         k=3
         l=4
         m=10000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot3.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot3.jpg"
+        image5=PIL.Image.open(image5_url)
 
         
     if selected_option=="Dylan":
@@ -137,7 +140,8 @@ def show_prediction():
         k=0
         l=3
         m=6000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot4.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot4.jpg"
+        image5=PIL.Image.open(image5_url)
 
     
    
@@ -155,7 +159,8 @@ def show_prediction():
         k=9
         l=2
         m=6000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot5.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot5.jpg"
+        image5=PIL.Image.open(image5_url)
 
 
     if selected_option=="Fiona":
@@ -172,7 +177,8 @@ def show_prediction():
         k=6
         l=4
         m=10000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot6.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot6.jpg"
+        image5=PIL.Image.open(image5_url)
 
 
 
@@ -190,7 +196,8 @@ def show_prediction():
         k=7
         l=4
         m=5000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot7.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot7.jpg"
+        image5=PIL.Image.open(image5_url)
 
         
     if selected_option=="Henry":
@@ -207,7 +214,8 @@ def show_prediction():
         k=0
         l=4
         m=2000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot8.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot8.jpg"
+        image5=PIL.Image.open(image5_url)
 
        
     if selected_option=="Isabella":
@@ -224,7 +232,8 @@ def show_prediction():
         k=7
         l=4
         m=17000
-        image5=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/headshot9.jpg")
+        image5_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/headshot9.jpg"
+        image5=PIL.Image.open(image5_url)
 
         
     col1, col2, col3 = st.columns([2,2,2])
@@ -334,17 +343,19 @@ def show_prediction():
             
     col1, col2, col3 = st.columns([2,2,2])
     
-    image2=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/Index_1.png")
+    image2_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/Index_1.png"
+    image2=PIL.Image.open(image2_url)
     new_size = (700, 700)
     image2 = image2.resize(new_size)
 
-
-    image3=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/Index_2.png")
+    image3_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/Index_2.png"
+    image3=PIL.Image.open(image3_url)
     new_size = (700, 700)
     image3 = image3.resize(new_size)
     
     
-    image4=PIL.Image.open("D:/jinda/NTU/SEMESTER 4/BC2407-Analytics/BC2407 Course Materials/project/Webapp/Index_3.png")
+    image4_url="https://raw.githubusercontent.com/jaijindal/BC2407_S1TEAM7_ATTRITION_APP/main/Index_3.png"
+    image4=PIL.Image.open(image4_url)
     new_size = (700, 700)
     image4 = image4.resize(new_size)
     
