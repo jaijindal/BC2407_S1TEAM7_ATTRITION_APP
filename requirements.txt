@@ -1,4 +1,0 @@
-Pillow
-pandas
-scikit-learn
-streamlit
